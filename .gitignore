@@ -1,0 +1,109 @@
+# General ignores for all environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite
+*.log
+*.db
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.swn
+*.swns
+
+# Ignore environment files
+# .env
+# .env.local
+# .env.development
+# .env.production
+# .env.test
+
+# ---------------------------
+# FASTAPI (BackEnd)
+# ---------------------------
+
+# Virtual environment
+venv/
+.tox/
+.mypy_cache/
+pytest_cache/
+pip-log.txt
+pip-delete-this-directory.txt
+dist/
+build/
+*.egg-info/
+
+# Ignore database migrations (optional)
+migrations/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+
+# Logs and debug files
+logs/
+*.log
+
+# ---------------------------
+# NEXT.JS (Frontend)
+# ---------------------------
+
+# Next.js build output
+.next/
+out/
+.cache/
+.vercel/
+.netlify/
+
+# Dependencies
+node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Production build files
+build/
+
+# Static exports
+out/
+public/static/
+public/media/
+
+# Misc
+*.bak
+*.tmp
+*.swp
+*.swo
+.npmrc
+.yarnrc
+
+# Ignore IDE-specific files
+*.sublime-workspace
+*.sublime-project
+*.idea/
+*.vscode/
+
+# ---------------------------
+# DOCKER
+# ---------------------------
+docker-compose.override.yml
+# docker-compose.yml
+# Dockerfile
+.dockerignore
+
+# ---------------------------
+# TESTING
+# ---------------------------
+
+# Ignore test database when IS_TESTING is True
+test_db.sqlite
